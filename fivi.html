@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>一根小黄瓜</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style type="text/css">
+	body{
+		background: url(images/319d3503fd394f6d8685d05faef238f5.png) no-repeat 100% 100%;
+	}
+	footer{
+		  bottom: 10%;  
+  left: 0px;  
+  color: #666;  
+  width: 100%;  
+  clear: both;//清除浮动  
+  line-height: 90px;  
+  background-color: #ebebed;  
+	}
+</style>
+<div class="container-fluid">
+  <h1>someone like you~~~</h1>
+  <p id="text"> </p>
+  
+</div>
+<div id="">
+	<img src="images/0172fa55daaf856ac7251df8056ce1.gif"/>
+</div>
+<br />
+<footer >
+	<a href="too.html">next</a>
+</footer>
+</body>
+<script src="js/hammer.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var i=0;
+	var str="阿萨德实打是看卡肥嘟嘟佛挡杀佛 胜多负少的是看卡肥嘟嘟佛挡杀佛 胜多负少的是看卡肥嘟嘟佛挡杀佛 胜多负少的是看卡肥嘟嘟佛挡杀佛 胜多负少的是看卡肥嘟嘟佛挡杀佛 胜多负少的实大大是看卡肥嘟嘟佛挡杀佛 胜多负少的 飒飒是丝氨酸  给埃塞is给爱啊实打实  萨德实打实大大是看卡飒飒是丝氨酸  给埃塞is给爱萨德实打实大大是看卡飒飒是丝氨酸  给埃塞is给爱 ";
+	
+	window.onload=function typing(){
+		//获取div
+		var mydiv=document.getElementById("text");
+		mydiv.innerHTML+=str.charAt(i);
+		i++;
+		var id=setTimeout(typing,100);
+		if(i==str.length){
+			clearTimeout(id);
+		}
+	}
+</script>
+</html>
